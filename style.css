@@ -1,0 +1,51 @@
+.container{
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.display-div{
+    width: 360px;
+    height: 48px;
+}
+
+.display-div *{
+    display: inline;
+    float: left;
+}
+
+.all-div{
+    width: 360px;
+    min-height: 256px;
+}
+
+.all-div .message{
+    padding-left: 10px;
+}
+
+.input-div{
+    width: 360px;
+    height: 48px;
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.input-div div{
+    padding-left: 10px;
+}
+
+#x-button{
+    width: 32px;
+    height: 100%;
+
+    margin-right: 10px;  
+    
+    user-select: none;
+}
+
+*{
+    font-family: sans-serif;
+}
