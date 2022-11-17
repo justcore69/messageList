@@ -28,7 +28,7 @@ xbutt.onclick = function(){ //remove displaying message from list
         if(currentMessage === displayingMessageArray[i]){
             displayingMessageArray.splice(i, 1)
             curMessText.innerHTML = ''
-            break;
+            break
         }
     }
 }
