@@ -11,22 +11,32 @@
 	<center><h2>List of messages.</h2>
 	<h4>- Click X to remove from the list -</h4>
 	<h4>- Click Submit to make a new message -</h4></center>
-	<br>
+
 	<div class="display-div container">
 		<button id="x-button">X</button>
 		<p id="current-message">Message 123</p>
 	</div>
+
 	<div class="all-div container" id="all-div">
-		<p ></p>
 	</div>
+
 	<div class="input-div container">
 		<div>
-			<input type="text" id="form-message" name="fmess" placeholder="Enter your message" maxlength="30">
+			<input type="text" id="form-message" placeholder="Enter your message" maxlength="30">
 			<input type="submit" id="form-button" value="Submit">
 		</div>
 	</div>
+	
+	<div class="setting-div container">
+		<p>Message display delay: </p>
+		<input type="text" id="setting-delay" placeholder="0.0" maxlength="3">
+	</div>
 
-	<script src="js.js"></script>
+	<footer>
+		<center><small>Made by JustCore 2022</small></center>
+	</footer>
+
+	<script src="main.js"></script>
 
 </body>
 </html>

@@ -1,13 +1,21 @@
 const fmess = document.getElementById('form-message')
 const fbutt = document.getElementById('form-button')
+
 const xbutt = document.getElementById('x-button')
+
+const sdelay = document.getElementById('setting-delay')
+
 const curMessText = document.getElementById('current-message')
+
+let messageDisplayDelay = 2.5
 
 let allMessageArray = ['Default message 123', 'I wanna some pizza', 'Free coffee!!!']
 let displayingMessageArray = allMessageArray;
 
 let currentMessage = ''
 let currentMessageID = 0;
+
+sdelay.value = messageDisplayDelay
 
 displayNextMessage()
 updateMessageList()
@@ -27,6 +35,9 @@ fbutt.onclick = function(){
 }
 
 async function displayNextMessage(){
+
+    messageDisplayDelay = sdelay.value
+
     if(currentMessageID >= displayingMessageArray.length){
         currentMessageID = 0;
     }
@@ -37,7 +48,7 @@ async function displayNextMessage(){
 
     console.log(currentMessageID)
     currentMessageID++
-    await delay(2.5)
+    await delay(messageDisplayDelay)
     displayNextMessage()
 }
 
@@ -55,7 +66,7 @@ async function updateMessageList(){
 
         _allDiv.appendChild(_pmess)
     }
-    await delay(0.05)
+    await delay(messageDisplayDelay)
     updateMessageList()
 }
 

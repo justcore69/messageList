@@ -2,7 +2,7 @@
     border: 1px solid rgb(49, 49, 49);
     border-radius: 2px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .display-div{
@@ -33,6 +33,17 @@
 
 }
 
+.setting-div{
+    width: 360px;
+    min-height: 48px;
+}
+
+.setting-div *{
+    display: inline;
+    float: left;
+    padding-left: 10px;
+}
+
 .input-div div{
     padding-left: 10px;
 }
@@ -48,6 +59,13 @@
 
 #form-message{
     width: 270px;
+}
+
+#setting-delay{
+    width: 28px;
+
+    margin-left: 10px;
+    margin-top: 14px;
 }
 
 *{
