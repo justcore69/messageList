@@ -16,7 +16,7 @@ let allMessageArray = ['Default message 123', 'I wanna some pizza', 'Free coffee
 let displayingMessageArray = allMessageArray;
 
 let currentMessage = ''
-let currentMessageID = 0;
+let currentMessageID = 0
 
 sdelay.value = messageDisplayDelay
 
@@ -69,7 +69,7 @@ async function updateMessageList(){ //update list of all messages
 
         _allDiv.appendChild(_pmess)
     }
-    await delay(messageDisplayDelay)
+    await delay(0.001)
     updateMessageList()
 }
 
