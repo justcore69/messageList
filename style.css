@@ -46,6 +46,10 @@
     user-select: none;
 }
 
+#form-message{
+    width: 270px;
+}
+
 *{
     font-family: sans-serif;
 }
